@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <main>
+
+        <!-- main game section -->
+     <div id="welcomescreen">
+
+         <h2>Guess the rendome number  Between 1-100</h2>
+         <img src="lets-play-neon-sign-bright-260nw-1310883713.jpg" alt="">
+         <section class="eventsection">
+             <p> Select the difficuly</p>
+             <div class="buttoon-wrapper">
+                 <button onclick="easygame()"> Easy:10 attempts</button>
+                 <button onclick="Hardgame()"> Hard: 5 attempts</button>
+             </div>
+         </section>
+      </div>
+     
+     
+     
+      <!-- our actual game -->
+      <div id="gamearea">
+          <div id="newgamebutton">
+              <button onclick="newgame()"> New game</button>
+          </div>
+    
+
+
+      <section>
+          <h3 id="textoutput">your Guess</h3>
+          <input type="number" name="" id="inputbox" min="1" max="100" placeholder="Enter the Number" onchange="compairgame()">
+      </section>
+
+     <section class="stats">
+         <div class="info">
+             <p>
+                 number of previous attempts
+             </p>
+             <span id="attempts">0</span>
+         </div>
+
+         <div class="info">
+            <p>
+                number of previous Guesses
+            </p>
+            <span id="Guesses">0</span>
+        </div>
+     </section>
+    </div>
+    </main>
+    <script src="index.js"> </script>
+</body>
+</html>
